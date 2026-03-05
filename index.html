@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="images/レゴ.png">
+<title>便利なポータル（改）
+</title>
+
+<style>
+ .search-container {
+    position: absolute;
+    top: 35%; /* 指で指していたあたりに配置 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 580px; /* 本物のGoogleに近い幅 */
+  }
+
+  /* 入力欄本体のデザイン */
+  .search-input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px; /* 丸みをつける */
+    outline: none; /* クリックした時の青い線を消す */
+    background-color: white;
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28); /* ふわっと浮いた影 */
+    transition: 0.2s;
+  }
+
+  /* マウスが乗った時に影を少し強くする（Google風） */
+  .search-input:hover, .search-input:focus {
+    box-shadow: 0 1px 8px rgba(32,33,36,0.8);
+  }
+  
+
+ body  {
+            background-image: url("https://tsukatte.com/wp-content/uploads/2022/07/waves_BG_01_blue.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            margin: 0;
+        }
+
+        
+        .scratch-image {
+            position: absolute;
+            top: 0;
+            left: 53%;
+            transform: translateX(-50%);
+            width: 350px; 
+        }
+    
+         
+
+.container {
+
+  display: flex;
+  flex-wrap: wrap;       /* 入りきらないときは次の行へ */
+  justify-content: center; /* 真ん中に並べる */
+  gap: 80px;             /* ロゴ同士の隙間 */
+  padding: 300px 100px 50px 100px;   /* 上のポータル画像との距離 */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* すべてのロゴに共通の設定 */
+.logo-item {
+  display: flex;
+  flex-direction: column; /* 画像と文字を縦に並べる */
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 18px; /* 文字を少し調整 */
+  font-weight: bold;
+}
+
+/* 画像の設定（ここを一箇所いじるだけで全部のサイズが変わる！） */
+/* 画像の設定 */
+.logo-item img {
+  width: 120px; 
+  height: 120px;      /* 高さを固定する */
+  object-fit: contain; /* 枠の中で画像が切れないように収める */
+  transition: transform 0.3s;
+  border-radius: 18px;
+  background-color: rgba(255,255,255,0.5); /* 任意：背景を少し白くするとサイズ感が揃って見えます */
+}
+
+.logo-item:hover img {
+  transform: scale(1.1);
+}
+</style>
+ <div class="search-container">
+  <form action="https://www.google.com/search" method="get" target="_blank">
+    <input type="text" name="q" class="search-input" placeholder="検索">
+  </form>
+</div>
+</head>
+<body>
+<div class="container">
+  <a href="https://www.office.com/" target="_blank" class="logo-item">
+    <img src="images/microsoft.png">
+    <span>Microsft365</span>
+  </a>
+
+  <a href="https://teams.microsoft.com/v2/" target="_blank" class="logo-item">
+    <img src="https://support.microsoft.com/images/ja-jp/d09f346e-3b3f-4bbc-b4cd-ad6f9df1ab6e">
+    <span>Teams</span>
+  </a>
+
+  <a href="https://slnsv02.osaka-smartschool-sso.com/u/c271004sekimehigasie/signon" target="_blank" class="logo-item">
+    <img src="images/心.png">
+    <span>心の天気</span>
+  </a>
+  <a href="https://osaka-city-edu.skymenu-cloud.net/skymenu/22188/portal/ssologin" target="_blank" class="logo-item">
+    <img src="images/sky.png">
+    <span>sky menu</span>
+  </a>
+  <a href="https://classroom.google.com/" target="_blank" class="logo-item">
+    <img src="images/classroom.png">
+    <span>class room</span>
+  </a>
+  <a href="https://rakkotan.com/" target="_blank" class="logo-item">
+    <img src="images/らっこたん.png">
+    <span>らっこたん</span>
+  </a>
+  <a href="https://sushida.net/play.html" target="_blank" class="logo-item">
+    <img src="images/くら寿司.png">
+    <span>寿司打</span>
+  </a>
+  
+  
+
+ <a href="https://launcher.myapps.microsoft.com/api/signin/7375af80-2bde-45a0-a879-ae34cdd0d2e5?tenantId=4e01f52c-d880-45cd-a567-dc9cec4a4287" target="_blank" class="logo-item">
+    <img src="https://d1larhalzuwzrz.cloudfront.net/9xeetkw457m41ee3qqqo4t1lg5p4">
+    <span>canva</span>
+  </a>
+  
+  
+  </div>
+  </head>
+  <body>
+
+   <img src="images/ポータル.png" alt="学びのポータル"class="scratch-image">
+   </body>
+   
+
